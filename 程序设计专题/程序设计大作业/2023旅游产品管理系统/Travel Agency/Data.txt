@@ -1,0 +1,56 @@
+01
+Hangzhou
+May
+1201r
+tour round the West Lake and Lingyin temple at 5.27
+701
+True
+02
+Nanjing
+June
+1500r
+visit Nanjing Presidential Place at 6.5
+20
+Flase
+03
+Xian
+July
+1200r
+Travel in Xian, taste various of food
+63
+Flase
+04
+Shanghai
+August
+1520r
+Feeling the charm of modern city
+55
+Flase
+05
+Wuhan
+September
+1230r
+taste the Wuhan hot dry noodles
+25
+Flase
+06
+Baoji
+October
+1000r
+climb the Mount Taibai
+14
+Flase
+07
+Guangdong
+November
+1100r
+visit local place of interest
+32
+Flase
+08
+Xinjiang
+December
+1500r
+skiing and enjoying scene
+45
+Flase

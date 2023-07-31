@@ -1,0 +1,88 @@
+# Project: GraphicsTest
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = libgraphics/exceptio.o libgraphics/genlib.o libgraphics/graphics.o libgraphics/imgui.o libgraphics/linkedlist.o libgraphics/random.o libgraphics/simpio.o libgraphics/strlib.o "function\ library/FunctionLib.o" FrontWindow.o "interface\ file/User.o" "interface\ file/Unsubmit.o" "interface\ file/Sort.o" "interface\ file/Reserve.o" "interface\ file/Main.o" "interface\ file/LocationSearch.o" "interface\ file/Feedback.o" "interface\ file/Delete.o" "interface\ file/DateSearch.o" "interface\ file/Administrater.o" "interface\ file/Add.o"
+LINKOBJ  = libgraphics/exceptio.o libgraphics/genlib.o libgraphics/graphics.o libgraphics/imgui.o libgraphics/linkedlist.o libgraphics/random.o libgraphics/simpio.o libgraphics/strlib.o "function library/FunctionLib.o" FrontWindow.o "interface file/User.o" "interface file/Unsubmit.o" "interface file/Sort.o" "interface file/Reserve.o" "interface file/Main.o" "interface file/LocationSearch.o" "interface file/Feedback.o" "interface file/Delete.o" "interface file/DateSearch.o" "interface file/Administrater.o" "interface file/Add.o"
+LIBS     = -L"C:/Users/Public/Downloads/dev/Dev-Cpp/MinGW64/lib" -L"C:/Users/Public/Downloads/dev/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -mwindows -g3
+INCS     = -I"C:/Users/Public/Downloads/dev/Dev-Cpp/MinGW64/include" -I"C:/Users/Public/Downloads/dev/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/Public/Downloads/dev/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"./include" -I"./interface file" -I"./function library"
+CXXINCS  = -I"C:/Users/Public/Downloads/dev/Dev-Cpp/MinGW64/include" -I"C:/Users/Public/Downloads/dev/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/Public/Downloads/dev/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Users/Public/Downloads/dev/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"./include" -I"./interface file" -I"./function library"
+BIN      = GraphicsTest.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+libgraphics/exceptio.o: libgraphics/exceptio.c
+	$(CC) -c libgraphics/exceptio.c -o libgraphics/exceptio.o $(CFLAGS)
+
+libgraphics/genlib.o: libgraphics/genlib.c
+	$(CC) -c libgraphics/genlib.c -o libgraphics/genlib.o $(CFLAGS)
+
+libgraphics/graphics.o: libgraphics/graphics.c
+	$(CC) -c libgraphics/graphics.c -o libgraphics/graphics.o $(CFLAGS)
+
+libgraphics/imgui.o: libgraphics/imgui.c
+	$(CC) -c libgraphics/imgui.c -o libgraphics/imgui.o $(CFLAGS)
+
+libgraphics/linkedlist.o: libgraphics/linkedlist.c
+	$(CC) -c libgraphics/linkedlist.c -o libgraphics/linkedlist.o $(CFLAGS)
+
+libgraphics/random.o: libgraphics/random.c
+	$(CC) -c libgraphics/random.c -o libgraphics/random.o $(CFLAGS)
+
+libgraphics/simpio.o: libgraphics/simpio.c
+	$(CC) -c libgraphics/simpio.c -o libgraphics/simpio.o $(CFLAGS)
+
+libgraphics/strlib.o: libgraphics/strlib.c
+	$(CC) -c libgraphics/strlib.c -o libgraphics/strlib.o $(CFLAGS)
+
+"function\ library/FunctionLib.o": function\ library/FunctionLib.c
+	$(CC) -c "function library/FunctionLib.c" -o "function library/FunctionLib.o" $(CFLAGS)
+
+FrontWindow.o: FrontWindow.c
+	$(CC) -c FrontWindow.c -o FrontWindow.o $(CFLAGS)
+
+"interface\ file/User.o": interface\ file/User.c
+	$(CC) -c "interface file/User.c" -o "interface file/User.o" $(CFLAGS)
+
+"interface\ file/Unsubmit.o": interface\ file/Unsubmit.c
+	$(CC) -c "interface file/Unsubmit.c" -o "interface file/Unsubmit.o" $(CFLAGS)
+
+"interface\ file/Sort.o": interface\ file/Sort.c
+	$(CC) -c "interface file/Sort.c" -o "interface file/Sort.o" $(CFLAGS)
+
+"interface\ file/Reserve.o": interface\ file/Reserve.c
+	$(CC) -c "interface file/Reserve.c" -o "interface file/Reserve.o" $(CFLAGS)
+
+"interface\ file/Main.o": interface\ file/Main.c
+	$(CC) -c "interface file/Main.c" -o "interface file/Main.o" $(CFLAGS)
+
+"interface\ file/LocationSearch.o": interface\ file/LocationSearch.c
+	$(CC) -c "interface file/LocationSearch.c" -o "interface file/LocationSearch.o" $(CFLAGS)
+
+"interface\ file/Feedback.o": interface\ file/Feedback.c
+	$(CC) -c "interface file/Feedback.c" -o "interface file/Feedback.o" $(CFLAGS)
+
+"interface\ file/Delete.o": interface\ file/Delete.c
+	$(CC) -c "interface file/Delete.c" -o "interface file/Delete.o" $(CFLAGS)
+
+"interface\ file/DateSearch.o": interface\ file/DateSearch.c
+	$(CC) -c "interface file/DateSearch.c" -o "interface file/DateSearch.o" $(CFLAGS)
+
+"interface\ file/Administrater.o": interface\ file/Administrater.c
+	$(CC) -c "interface file/Administrater.c" -o "interface file/Administrater.o" $(CFLAGS)
+
+"interface\ file/Add.o": interface\ file/Add.c
+	$(CC) -c "interface file/Add.c" -o "interface file/Add.o" $(CFLAGS)
